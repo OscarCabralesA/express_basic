@@ -1,11 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
 
-// initializing the app
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
 
 // initial path in localhost:3000
 app.get('/', (req, res) => {
@@ -31,3 +26,6 @@ app.get('/explorersInNode', (req, res) => {
 app.get('/explorers/:explorerName', (req, res) => {
     res.send(req.params)
 })
+
+
+module.exports = app
