@@ -1,7 +1,6 @@
 const request = require("supertest");
 const app = require("./app")
 
-// using done to notify that it ends 
 describe("Test the app", () => {
     
     test('should response the GET method', async () => {
